@@ -200,7 +200,7 @@ We will use URL path versioning (e.g., /api/v1/resources, /api/v2/resources).
 
 ## References
 - API Design Guidelines document
-- [REST API Versioning Best Practices](https://example.com)
+- [REST API Versioning Best Practices - refer to official REST API documentation]
 ```
 
 ---
