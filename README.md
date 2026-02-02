@@ -33,6 +33,31 @@ File structure (high-level)
     - anti-patterns.md
     - checklists.md
 
+### Workflow Phases
+
+| Phase | Document | Purpose | Output |
+|-------|----------|---------|--------|
+| **1. Discovery** | `transform-requirements.md` | Extract and structure requirements from stakeholders | `docs/requirements.md` |
+| **2. Validation** | `clarify-questions.md` | Identify gaps and validate understanding with stakeholders | Requirements refinement |
+| **3. Planning** | `plan.md` | Design overall architecture and approach | `docs/plan.md` |
+| **4. Requirement-Plan Sync** | `loop-req.md` | Cross-validate requirements against plan for consistency | Validation report |
+| **5. Task Breakdown** | `task.md` | Decompose plan into actionable development tasks | `docs/tasks.md` |
+| **6. Plan-Task Alignment** | `task-check.md` | Verify tasks align with plan and cover all requirements | Alignment matrix |
+| **7. Implementation** | `auto.md` | Execute all phases: code, docs, diagrams, ADRs | Implementation artifacts |
+| **8. Test Generation** | `test-gen.md` | Generate missing test cases for gaps in coverage | Test suite |
+| **9. Code Review** | `review.md` | Review implementation, documentation, and ADRs | Review findings |
+| **10. Quality Assurance** | `qa.md` | Final validation and sign-off | QA report |
+
+### How to Use This Workflow
+
+- **Start at Phase 1** for new projects or major features
+- **Jump to Phase 5** if you already have solid requirements and architecture
+- **Use Phases 8-10** as gates before merging to main/production
+- **Loop back to Phase 4-6** if new requirements emerge during implementation
+
+### Quick Reference
+
+
 Usage examples
 - Produce an Architecture Decision Record (ADR)
   1. Read docs/architecture-guide/adr-guide.md to see the ADR template and examples.
